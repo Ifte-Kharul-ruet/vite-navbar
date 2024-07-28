@@ -1,0 +1,91 @@
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #96dfc3;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    font: Arial, Times;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover{
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #00975D;
+}
+
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #00975D;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#logo{
+    width: 95%;
+}
+#mobile{
+    display: none;
+}
+
+#mobile i{
+    color: aliceblue;
+    align-items: center;
+}
+
+@media screen and (max-width: 769px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top:50px;
+        right: -350px;
+        width: 300px;
+        height: 100vh;
+        background: #96dfc3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease;
+
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 20px;
+    }
+    #mobile{
+        display: block;
+        padding: 20px;
+    }
+    #mobile i{
+       font-size: 24px; 
+       cursor: pointer;
+    }
+    
+}
