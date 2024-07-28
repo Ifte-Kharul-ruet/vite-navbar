@@ -62,7 +62,37 @@ nav{
 /* .carousal{
     display: none;
 } */
-
+.footer{
+    width: 100%;
+    background-color: teal;
+    
+    display: flex;
+    justify-content: space-between;
+}
+/* .footLinks{
+    display:flex;
+} */
+.footLinks ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+.footLinks ul li{
+    
+    list-style: square;
+    position: relative;
+    padding: 0 10px;
+    margin: 0 10px;
+    /*  ; */
+    
+}
+.footLinks ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 @media screen and (max-width: 769px){
     #navbar{
         display: flex;
