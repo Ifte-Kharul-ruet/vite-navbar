@@ -21,7 +21,20 @@ function Navbar() {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#" id="about">
+                About Us
+              </a>
+              <ul className="about-drop">
+                <li>
+                  <a href="#">Vission</a>
+                </li>
+                <li>
+                  <a href="#">Mission</a>
+                </li>
+                <li>
+                  <a href="#">Team</a>
+                </li>
+              </ul>
             </li>
             <li>
               <a href="#">Product & Solution</a>

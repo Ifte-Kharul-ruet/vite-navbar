@@ -93,6 +93,15 @@ nav{
     justify-content: center;
     
 }
+.about-drop{
+    display: none;
+}
+/* .about-drop:hover{
+    display: inline;
+} */
+#about .about-drop:hover{
+    display: block;
+}
 @media screen and (max-width: 769px){
     #navbar{
         display: flex;
